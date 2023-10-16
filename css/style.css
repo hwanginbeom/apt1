@@ -729,6 +729,7 @@ RESPONSIVE
 	color:#313437;
 	background-color:#fff;
 	overflow: hidden;
+	/* width: 1181px; */
 
   }
   
@@ -798,11 +799,9 @@ RESPONSIVE
 
 
 .input-form {
-	max-width: 680px;
-
+	/* max-width: 680px; */
 	margin-top: 80px;
 	padding: 32px;
-
 	background: #fff;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
