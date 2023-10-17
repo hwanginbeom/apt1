@@ -182,11 +182,11 @@ HOME SECTION
 ***********************/
 
 #home {
-	height: 725px;
+	/* height: 725px; */
 	/* height: 1500px; */
 
 	/* height : responsive; */
-	background: url("../img/header.jpg") center center no-repeat;
+	/* background: url("../img/header.jpg") center center no-repeat; */
 	background-size: cover;
 	background-position : 50% 50%;
 	
