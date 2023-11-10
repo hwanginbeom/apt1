@@ -4,7 +4,15 @@ DEFAULT
 
 body {
 	padding-top: 90px;
-	font-family: 'Crimson Text', serif;
+	min-height: calc(100vh - 30px);
+
+	/* font-family: 'Crimson Text', serif;
+	font-family: 'Noto Sans KR', sans-serif; */
+	font-family: 'Nanum Gothic', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
+
+	/* font-family: 'Noto Sans KR', sans-serif; */
+	/* font-family: 'Roboto', sans-serif; */
 	font-size: 15px;
 	color: #637988;
 	line-height: 1.7;
@@ -547,6 +555,7 @@ CONTACT SECTION
 	color: #ffffff;
 }
 
+
 /**********************
 FOOTER SECTION
 ***********************/
@@ -811,6 +820,21 @@ RESPONSIVE
 	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
   }
 
+  footer {
+	position : fixed;
+	bottom : 0;
+	width: 100vw;
+	/* height: 50vw; */
+
+	/* 생략 */
+  }
+
+  .space {
+	width: 4px;
+	height: auto;
+	display: inline-block;
+  }
+  
 /*   
   .photo-gallery .overlay_3 {
 	left: 0;
@@ -839,3 +863,102 @@ RESPONSIVE
   .image_wrapper:hover .overlay_3 {
 	transform: scale(1);
   } */
+
+  .modal-btn-box{
+	width:100%;
+	text-align:center;
+  }
+  .modal-btn-box button{
+	display:inline-block;
+	width:150px;
+	height:50px;
+	background-color:#ffffff;
+	border:1px solid #e1e1e1;
+	cursor:pointer;
+	padding-top:8px;
+  }
+  .popup-wrap{
+	justify-content:center;
+	align-items:center;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:none;
+	padding:15px;
+  }
+  /* .modal{
+	width: 300px;
+    height: 300px;
+	background-color:#ffffff;
+	background-image: url(../img/2.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:1px solid black;
+  } */
+
+  .popup{
+	width:100%;
+	max-width:400px;
+	background-color:#ffffff;
+	border-radius:10px;
+	overflow:hidden;
+	background-color:#c68282;
+	box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
+  }
+  .popup-head{
+	width:100%;
+	height:50px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+  }
+  .head-title {
+	  font-size: 38px;
+	  font-style: italic;
+	  font-weight: 700;
+	  letter-spacing: -3px;
+	  text-align: center;
+  }
+  .popup-body{
+	width:100%;
+	background-color:#ffffff;
+  }
+  .body-content{
+	width:100%;
+	padding:30px;
+  }
+  .body-titlebox{
+	text-align:center;
+	width:100%;
+	height:40px;
+	margin-bottom:10px;
+  }
+  .body-contentbox{
+	word-break:break-word;
+	overflow-y:auto;
+	min-height:100px;
+	max-height:200px;
+  }
+  .popup-foot{
+	width:100%;
+	height:50px;
+  }
+  .pop-btn{
+	display:inline-flex;
+	width:50%;
+	height:100%;
+	float:left;
+	justify-content:center;
+	align-items:center;
+	color:#ffffff;
+	cursor:pointer;
+  }
+  .pop-btn.confirm{
+	border-right:1px solid #ffffff;
+  }
+  .pop-btn.close{
+	color:#ffffff;
+}
