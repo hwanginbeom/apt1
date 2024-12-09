@@ -145,6 +145,23 @@ NAVBAR
 	max-height: 44px;
 }
 
+.navbar-logo {
+	max-width: 100%;
+	height: auto; /* 비율 유지 */
+	display: block; /* 로고 정렬 문제 방지 */
+  }
+  
+  /* 작은 화면에서 크기 제한 */
+  @media (max-width: 439px) {
+	.navbar-logo {
+
+	  
+	  max-width: 200px; /* 로고 최대 크기 설정 */
+	  margin-top:  10px;   /* 필요 시 중앙 정렬 */
+	}
+  }
+  
+
 .navbar-default .navbar-nav>li>a {
 	font-size: 13px;
 	color: #707070;
