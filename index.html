@@ -611,6 +611,22 @@
 </script>
 
 <script>
+document.addEventListener('click', function (event) {
+  const navbar = document.getElementById('main-navbar'); // 네비게이션 메뉴
+  const toggleButton = document.querySelector('.navbar-toggle'); // 햄버거 버튼
+
+  // 네비게이션 메뉴가 열려 있는 상태 확인
+  const isMenuOpen = navbar.classList.contains('in');
+
+  // 메뉴가 열려 있고, 클릭한 요소가 메뉴나 버튼이 아닌 경우 닫기
+  if (isMenuOpen && !navbar.contains(event.target) && !toggleButton.contains(event.target)) {
+    toggleButton.click(); // Bootstrap의 토글 기능을 호출해 메뉴 닫기
+  }
+});
+
+</script>
+
+<script>
     $(document).ready(function () {
         $('[data-scroll-to]').on('click', function () {
             var target = $(this).data('scroll-to');
